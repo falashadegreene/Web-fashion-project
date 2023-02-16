@@ -14,7 +14,7 @@ emailForm.addEventListener("submit", (e) => {
     alert("Input a value in both fields!");
   } else {
 
-    alert("Submitted successfully!");
+    alert("Submitted successfully! Thank you!");
     console.log(
       `This form has a name of ${name.value} and email of ${email.value}`
     );
