@@ -1,6 +1,8 @@
+
 body {
   width: 100%;
   margin: 0;
+  background:-webkit-linear-gradient(top, #E5DDC8, white, white, #E5DDC8 );
   
 }
 
@@ -108,9 +110,10 @@ label a {
   font-family: 'Dancing Script', cursive;
   font-family: 'Splash', cursive;
   font-size: 85px; 
-  background: -webkit-linear-gradient(#cc0066 0%, #ff0066 100%);
+  color: black;
+  /* background: -webkit-linear-gradient(#cc0066 0%, #ff0066 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent;   */
 }
 
 
@@ -167,6 +170,7 @@ a:hover::before {
   transform: scaleX(1);
 }
 
+/* image fade effect */
 
 #cf {
   margin-top: 7%;
@@ -206,13 +210,7 @@ a:hover::before {
   }
 }
 
-
-#enter {
-  margin-top: 40%;
-  margin-left: 50%;
-  margin-right: 10px;  
-}
-
+/* footer and copy right */
 
 footer {
   margin-top: 40%;
