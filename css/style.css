@@ -1,12 +1,7 @@
-html {
-  width: 100%;
-  margin: auto;
 
-
-}
 body {
-  /* width: 100%;
-  margin: 0; */
+  width: 100%;
+  margin: 0;
   /* background:-webkit-linear-gradient(top, #E5DDC8, white, white, white ); */
   
 }
@@ -224,11 +219,38 @@ footer {
   background-color: black;
   color: white;
   text-align: center; */
-  margin-top: 50px;
+  margin-top: 100px;
   border-top: 1px solid black;
- 
+  margin-left: 0;
+  margin-right: 0;
+   
+}
 
+.follow {
+  text-align: center;
+  padding-top: 5px;
+  font-family: 'Zeyada', cursive;
+  font-size: 25px;
+}
 
+.copyright {
+  text-align: center;
+  font-family: 'Zeyada', cursive;
+  font-size: 25px;
+}
+
+.social-icons{
+	padding:30px;
+	background-color:white;
+  text-align: center;
+  padding-top: 5px;
+}
+.social-icons a{
+	color: black;
+  line-height:30px;
+  font-size:30px;
+  margin: 0 5px;
+  text-decoration:none;
   
 }
 
