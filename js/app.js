@@ -1,30 +1,45 @@
-'use script'
+'use strict';
 
-// slider
-let slideIndex = 1;
-showSlides(slideIndex);
+// Event listner for image 
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+const images = document.querySelectorAll('.img_item img');
+let imgAtt;
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// forEach loop for event listner to execute click on each image
 
-function showSlides(n) {
-  let i;
-  let slides = 
-  document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active,");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+images.forEach((img) => {
+  img.addEventListener('click', (e) => {
+    imgAtt = e.target.src;
+    console.log(imgAtt);
+    imgModal();
+  });
+});
+
+// Modal 
+
+let imgModal = (src) => {
+  const modal = document.createElement('div');
+  modal.setAttribute('class', 'modal');
+  document.querySelector('.img-flex').append(modal);
+  const nextImage = document.createElement('img');
+  nextImage.setAttribute('src', src);
+  modal.append(nextImage)
+};
+
+
+
+//closing image button 
+
+const closeImg = document.createElement("i");
+closeImg.setAttribute("class", "fas fa-times closeBtn");
+
+closeImg.onclick = () => {
+  modal.remove();
+};
+modal.append(nextImage, closeImg);
+
+// Next and previous arrows for images 
+
+
+
+
