@@ -7,7 +7,6 @@ let imgIndex
 let imgAtt;
 
 // forEach loop for event listner to execute click on each image
-
 images.forEach((img, i) => {
   img.addEventListener("click", (e) => {
     imgAtt = e.target.src;
@@ -24,46 +23,41 @@ let imgModal = (src) => {
   modal.setAttribute("class", "modal");
   document.querySelector(".img-flex").append(modal);
 
-// adding image to Modal 
+  // adding image to Modal 
   const newImage = document.createElement("img");
   newImage.setAttribute("src", src);
-  modal.append(newImage);
+  //closing image button  
+  const closeImg = document.createElement("i");
+  closeImg.setAttribute("class", "fas fa-times closeImg");
+  // close img
+  closeImg.onclick = () => {
+    modal.remove();
+  };
+
+  // Next and previous arrows for images 
+
+  const nextBtn = document.createElement("i");
+  nextBtn.setAttribute("class", "fas fa-angle-right nextBtn");
+  // button to change to next image
+  nextBtn.onClick = () => {
+    newImage.setAttribute("src", nextImg())
+  };
+
+  const prevBtn = document.createElement("i");
+  prevBtn.setAttribute("class", "fas fa-angle-left prevBtn");
+ // button to change to previous image
+  prevBtn.onClick = () => {
+    newImage.setAttribute("src", prevImg())
+  }
+  modal.append(newImage, closeImg, nextBtn, prevBtn);
 };
-
-//closing image button 
-
-const closeImg = document.createElement("i");
-closeImg.setAttribute("class", "fas fa-times closeImg");
-
-closeImg.onclick = () => {
-  modal.remove();
-};
-modal.append(newImage, closeImg);
-
-// Next and previous arrows for images 
-
-const nextBtn = document.createElement("i");
-nextBtn.setAttribute("class", "fas fa-angle-right nextBtn");
-
-nextBtn.onClick = () => {
-  nextImage.setAttribute("src", "nextImg"())
-};
-
-const prevBtn = document.createElement("i");
-prevBtn.setAttribute("class", "fas fa-angle-left prevBtn");
-
-prevBtn.onClick = () => {
-  prevImage.setAttribute("src", "prevImg"())
-}
-modal.append(newImage, closeImg, nextBtn, prevBtn);
-
 
 // next image function 
 
 let nextImg = () => {
   imgIndex++;
 
-  if(imgIndex >= images.length) {
+  if (imgIndex >= images.length) {
     imgIndex = 0
   }
   return images[imgIndex].src;
@@ -73,8 +67,8 @@ let nextImg = () => {
 
 let prevImg = () => {
   imgIndex--;
-
-  if(imgIndex < 0 ) {
+  console.log(imgIndex);
+  if (imgIndex < 0) {
     imgIndex = images.length - 1
   }
   return images[imgIndex].src
