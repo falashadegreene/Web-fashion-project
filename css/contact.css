@@ -1,20 +1,18 @@
-.heading {
-  
-  /* margin-left: 37%; */
-  display: flex;
-  justify-content: center;
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Splash', cursive;
-  font-size: 85px; 
-  background: -webkit-linear-gradient(#cc0066 0%, #ff0066 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
+body {
+  width: 100%;
+  margin: 0;
+}
+
+html {
+  margin-right: 0;
 }
 
 *, *:before, *:after 
 { box-sizing: border-box; }
 
-html { font-size: 18px; }
+/* Hamburger Menu starts */
+*, *:before, *:after 
+{ box-sizing: border-box; }
 
 label .menu {
   position: absolute;
@@ -37,7 +35,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #69D2e7;
+  background: black;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -53,7 +51,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #69d2e7;
+  background: black;
 }
 
 label .hamburger:before { top: -10px; }
@@ -101,6 +99,115 @@ label ul {
 label a {
   margin-bottom: 1em;
   display: block;
-  color: #f38630;
+  color: black;
+  font-family: 'Zeyada', cursive;
+  font-size: 25px;
   text-decoration: none;  
+}
+
+li {
+  list-style-type: none;
+}
+
+#cf {
+  display: flex;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+.top {
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: -30px;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+/* heading */
+.heading {
+  display: flex;
+  justify-content: center;
+  font-family: 'Zeyada', cursive;
+  font-size: 10vw; 
+  color: black;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* image */ 
+#face {
+  display: flex;
+}
+
+.face {
+  margin-left: auto;
+  margin-right: auto;
+  height: 520px;
+  width: 420px;
+}
+
+/* email info */
+h2 {
+  text-align: center;
+  font-family: 'Zeyada', cursive;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.email_us {
+  text-align: center;
+  font-family: 'Zeyada', cursive;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+/* Submit form */ 
+form {
+  display:flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.form-control, button {
+  font-family: 'Zeyada', cursive;
+  font-size: 20px;
+  margin-left: 10px;
+  border: none;
+}
+
+/* .form-control {
+  text-align: center;
+} */
+
+/* button */
+
+button {
+  font-family: 'Zeyada', cursive;
+  font-size: 25px;
 }

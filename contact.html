@@ -4,38 +4,45 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Splash&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
   <title>Langston Language Contact</title>
 </head>
 <body>
   <header>
-    <h1 class="heading">Langstons language</h1>
+    
     <!-- hamburger menu -->
      <label>
        <input type="checkbox">
        <span class="menu"> <span class="hamburger"></span> </span>
        <ul>
-         <li><a href="about.html">ABOUT</a></li>
-         <li><a href="press.html">COLLECTION</a></li>
-         <li><a href="contact.html">CONTACT</a></li>
-         <li><a id="return" href="index.html">HOME</a></li> 
+         <li><a href="about.html">About</a></li>
+         <li><a href="press.html">Collection</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="index.html">Home</a></li> 
        </ul>
        </label>
   </header>
   <main>
-    <!--designer Contact info and social media links-->
-    <ul>
-      <li><a href="mailto:langstonlanguage@gmail.com" target="_blank">langstonlanguage@gmail.com</a></li>
-      <li><a href="https://www.instagram.com/langstonlanguage/" target="_blank">@langstonlanguage</a></li>
-    </ul>
+    <!--heading-->
+    <h1 class="heading">Langstons language</h1>
+
+    <!--face image-->
+    <div id="face">
+      <img class="face" src="img/dark.png">
+    </div>
+    <!--contact-->
+    <p class="email_us">Email us :</p>
+    <h2><a href="mailto:langstonlanguage@gmail.com" target="_blank">langstonlanguage@gmail.com</a></h2>
     <!--email form-->
     <form action="" id="emailForm">
-      <input type="text" id="name" class="form-control" placeholder="John Doe">
-      <input type="email" id="email" class="form-control" placeholder="johndoe@gmail.com">
+      <input type="text" id="name" class="form-control" placeholder="Name">
+      <input type="email" id="email" class="form-control" placeholder="Your email">
       <button type="submit">Submit</button>
     </form>
   </main>
-  <footer></footer>
+
+  <footer>
+  </footer>
   <script src="js/contact.js"></script>
 </body>
 </html>
