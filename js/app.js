@@ -10,7 +10,7 @@ let imgAtt;
 images.forEach((img, i) => {
   img.addEventListener("click", (e) => {
     imgAtt = e.target.src;
-    console.log(imgAtt);
+    // console.log(imgAtt);
     imgModal(imgAtt);
     imgIndex = i;
   });
@@ -33,16 +33,13 @@ let imgModal = (src) => {
   closeImg.onclick = () => {
     modal.remove();
   };
-
   // Next and previous arrows for images 
-
   const nextBtn = document.createElement("i");
   nextBtn.setAttribute("class", "fas fa-angle-right nextBtn");
   // button to change to next image
   nextBtn.onClick = () => {
     newImage.setAttribute("src", nextImg())
   };
-
   const prevBtn = document.createElement("i");
   prevBtn.setAttribute("class", "fas fa-angle-left prevBtn");
  // button to change to previous image
@@ -67,7 +64,7 @@ let nextImg = () => {
 
 let prevImg = () => {
   imgIndex--;
-  console.log(imgIndex);
+  // console.log(imgIndex);
   if (imgIndex < 0) {
     imgIndex = images.length - 1
   }
