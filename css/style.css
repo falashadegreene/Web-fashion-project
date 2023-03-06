@@ -175,7 +175,7 @@ a:hover::before {
   animation-name:fade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-direction: alternate;
   margin-left: auto;
   margin-right: auto;
@@ -236,8 +236,7 @@ footer {
   font-size:30px;
   margin: 0 5px;
   text-decoration:none;
-  background-color: black;
-  
+  background-color: black;  
 }
 
 
