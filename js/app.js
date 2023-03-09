@@ -51,25 +51,25 @@ let imgModal = (src) => {
 
 // next image function 
 
-let nextImg = () => {
-  imgIndex++;
+// let nextImg = () => {
+//   imgIndex++;
 
-  if (imgIndex >= images.length) {
-    imgIndex = 0
-  }
-  return images[imgIndex].src;
-};
+//   if (imgIndex >= images.length) {
+//     imgIndex = 0
+//   }
+//   return images[imgIndex].src;
+// };
 
-// prev image function 
+// // prev image function 
 
-let prevImg = () => {
-  imgIndex--;
-  // console.log(imgIndex);
-  if (imgIndex < 0) {
-    imgIndex = images.length - 1
-  }
-  return images[imgIndex].src
-}
+// let prevImg = () => {
+//   imgIndex--;
+//   // console.log(imgIndex);
+//   if (imgIndex < 0) {
+//     imgIndex = images.length - 1
+//   }
+//   return images[imgIndex].src
+// }
 
 
 

@@ -12,11 +12,15 @@ html {
   justify-content: center;
   font-family: 'Zeyada', cursive;
   font-size: 10vw; 
-  color: white;
-  -webkit-text-stroke: 0.5px black;
   margin-bottom: 0;
   margin-top: 0;
+  background: linear-gradient(to right, #DB1F48, #F8D210,
+  #01949A, #FA26A0, #DB1F48);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-stroke: 0.1px black;
 }
+
 
 .view {
   font-family: 'Zeyada', cursive;
@@ -42,7 +46,7 @@ label .menu {
   z-index: 100;
   width: 200px;
   height: 200px;
-  background: #01949A;
+  background: black;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -56,7 +60,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: black;
+  background: white;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -72,7 +76,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: black;
+  background: white;
 }
 
 label .hamburger:before { top: -10px; }
