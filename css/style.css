@@ -1,6 +1,7 @@
  body {
   width: 100%;
   margin: 0;
+  background-color: white;
 }
 
 html {
@@ -49,11 +50,7 @@ html {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  background-color: black;
 }
 
 input:checked + .slider:before {
@@ -69,6 +66,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.toggle {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: 'Zeyada', cursive;
+}
+
+.dark {
+  background-color: black;
 }
 
 /* toggle button end */
