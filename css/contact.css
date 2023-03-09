@@ -157,7 +157,6 @@ a:hover::before {
   font-family: 'Zeyada', cursive;
   font-size: 10vw; 
   color: white;
-  /* -webkit-text-stroke: 0.5px black; */
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -211,7 +210,11 @@ form {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+#email {
+  padding-bottom: 0;
+}
+
+@media (max-width: 800px) {
   .form-control input {
     margin: 10px 0;
   }
@@ -219,6 +222,24 @@ form {
   .form-control {
     flex-direction: column;
     align-items: stretch;
+  }
+}
+
+@media (max-width: 800px) {
+  #name {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  #email {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  button {
+    margin-top: 20px;
   }
 }
 
@@ -232,6 +253,7 @@ button {
   color: white;
 }
 
+
 /* join list */
 p {
   font-family: 'Zeyada', cursive;
@@ -241,10 +263,13 @@ p {
   font-weight:700;
 }
 
-
 h2 a {
   color: #01949A;
   font-weight: 800;
+}
+
+h2 a:hover {
+  color: #01949A;
 }
 
 /* footer and copy right */
@@ -255,8 +280,8 @@ footer {
   margin-top: 120px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background-color: black; 
-  border-top: 1px solid white; 
+  background: black; 
+  /* border-top: 1px solid rgba(145, 141, 141, 0.7); */
 }
 
 .follow {
@@ -264,7 +289,7 @@ footer {
   padding-top: 0;
   font-family: 'Zeyada', cursive;
   font-size: 25px;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
   background-color: black;
   color: white;
@@ -284,11 +309,10 @@ footer {
 
 .social-icons{
 	/* padding:30px; */
-	background-color: black;
-  color: black;
+	background: black;
   text-align: center;
   padding-top: 0;
-
+  color: white;
 }
 
 .social-icons a {
