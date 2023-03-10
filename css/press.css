@@ -34,7 +34,10 @@ label .menu {
   z-index: 100;
   width: 200px;
   height: 200px;
-  background: #FFF;
+  /* background: #FFF; */
+  background: linear-gradient(to right, #DB1F48,
+  #01949A, #FA26A0, #DB1F48);
+-webkit-text-fill-color: transparent;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -224,7 +227,7 @@ img {
   color: rgb(255, 255, 255);
 }
 
-
+/* 
 .nextBtn {
   color: rgba(255, 255, 255, 0.87);
   font-size: 25px;
@@ -249,7 +252,7 @@ img {
 
 .prevBtn {
   color: rgb(255, 255, 255);
-}
+} */
 
 
 /* Footer */

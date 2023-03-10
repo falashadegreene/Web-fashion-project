@@ -32,7 +32,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #DB1F48;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -101,6 +101,11 @@ input:checked + .slider:before {
   text-align: center;
   margin-bottom: 10px;
   margin-top: -10px;
+}
+
+#view_collection {
+  color: #DB1F48;
+  font-weight: bold;
 }
 
 p {
