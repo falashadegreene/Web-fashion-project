@@ -219,11 +219,12 @@ li {
 }
 
 .top {
-  justify-content: center;
+  /* justify-content: center;
   position: relative;
   margin-bottom: 40px;
-  margin-top: -30px;
+  margin-top: -30px; */
 }
+
 
 a {
   position: relative;
@@ -254,13 +255,17 @@ a:hover::before {
 
 /* image fade effect */
 .top {
-  animation-name:fade;
+  /* animation-name:fade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 3s;
-  animation-direction: alternate;
+  animation-direction: alternate; */
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: -30px;
 }
 
 @keyframes fade {

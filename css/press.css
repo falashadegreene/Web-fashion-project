@@ -162,6 +162,8 @@ a:hover::before {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
   flex-direction: row;
   max-height: 100vh;
 }
@@ -177,6 +179,7 @@ img {
   width: 330px;
   height: 495px;
   border-radius: 12px;
+  margin: 20px;
   /* box-shadow: 10px 4px 10px rgba(0,0,0,0.6); */
 }
 
