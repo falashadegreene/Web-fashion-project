@@ -254,7 +254,7 @@ a:hover::before {
 }
 
 /* image fade effect */
-.top {
+.top, .bottom {
   /* animation-name:fade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -266,8 +266,9 @@ a:hover::before {
   position: relative;
   margin-bottom: 40px;
   margin-top: -30px;
+  border-radius: 5%;
+  box-shadow: 5px 10px 18px #746C70; 
 }
-
 @keyframes fade {
   0% {
     opacity: 1;
